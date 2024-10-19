@@ -7,8 +7,8 @@ This project is a text-based version of the classic [Battleship](https://en.wiki
 This implementation is a simplified version of Battleship, where:
 
 - Each battleship occupies **only one grid** on the board, as opposed to spanning multiple grids like in the original game.
-- The grid size is **8 x 4**, giving you a smaller search space for guessing compared to the traditional 10 x 10 grid.
-- There are three hidden ships, and you need to guess their locations based on feedback received after each guess.
+- The grid size is **8 x 4**, providing a smaller search space for guessing compared to the traditional 10 x 10 grid.
+- There are only three hidden ships.
 
 After each guess, the game will return a triple as feedback:
 
@@ -42,7 +42,7 @@ ghci
 :l Main.hs
 ```
 
-4. Run the main function:
+4. Run the `main` function:
 
 ```
 main
@@ -53,7 +53,7 @@ main
 The locations of the battleships can be configured by modifying the `testCase` variable in `Main.hs`:
 
 ```haskell
-testCase = "F1 D2 G4"  -- Change this to any valid grid coordinates
+testCase = "F1 D2 G4"  -- Change the triple between quotes to any valid grid coordinates
 ```
 
 |     | A   | B   | C   | D   | E   | F   | G   | H   |
